@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,6 +34,7 @@
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
             margin-bottom: 25px;
             border: 1px solid var(--border-color);
+            overflow: hidden;
         }
 
         .text-center {
@@ -43,7 +44,7 @@
         h1 {
             font-size: 32px;
             font-weight: 800;
-            margin: 0 0 25px 0;
+            margin: 0 0 15px 0;
             color: #111827;
             letter-spacing: -0.025em;
         }
@@ -62,6 +63,22 @@
         p {
             margin: 0 0 16px 0;
             color: #4b5563;
+        }
+
+        .logo-img {
+            max-width: 100%;
+            height: auto;
+            width: 250px;
+            margin: 10px auto 20px auto;
+            display: block;
+        }
+
+        .intro-text {
+            font-size: 16px;
+            color: #374151;
+            margin: 20px 0 25px 0;
+            text-align: center;
+            font-weight: 500;
         }
 
         .main-link {
@@ -93,13 +110,12 @@
             flex-direction: column;
             gap: 12px;
             padding: 0;
-            margin: 0;
+            margin: 0 0 25px 0;
         }
 
         .social-item {
             display: flex;
-            align-items: center;
-            justify-content: space-between;
+            flex-direction: column;
             padding: 12px 16px;
             background: #f9fafb;
             border-radius: 10px;
@@ -117,22 +133,29 @@
         .social-name {
             font-weight: 600;
             color: #374151;
+            margin-bottom: 4px;
         }
 
         .social-url {
             color: var(--primary-color);
             font-size: 14px;
             word-break: break-all;
-            max-width: 70%;
-            text-align: right;
+        }
+
+        .banner-img {
+            max-width: 100%;
+            height: auto;
+            width: 100%;
+            border-radius: 8px;
+            display: block;
+            margin-top: 15px;
         }
 
         @media (max-width: 600px) {
             body { padding: 10px; }
             .container { margin: 20px auto; }
             .card { padding: 20px; }
-            .social-item { flex-direction: column; align-items: flex-start; gap: 4px; }
-            .social-url { max-width: 100%; text-align: left; font-size: 13px; }
+            .social-url { font-size: 13px; }
         }
     </style>
 </head>
@@ -145,11 +168,19 @@
         <div class="text-center">
             <h1>ABOUT US</h1>
         </div>
-        ZauberMalen.de bietet kostenlose Ausmalbilder zum Ausdrucken für Kinder und Erwachsene. Entdecken Sie vielfältige Motive aus beliebten Themen und Kategorien.
+
+        <!-- Ảnh Logo -->
+        <img src="logo.jpg" alt="Zaubermalen Logo" class="logo-img">
+
+        <!-- Đoạn giới thiệu tiếng Đức -->
+        <p class="intro-text">
+            ZauberMalen.de bietet kostenlose Ausmalbilder zum Ausdrucken für Kinder und Erwachsene. Entdecken Sie vielfältige Motive aus beliebten Themen und Kategorien.
+        </p>
+
         <h2>🌐 Official Website:</h2>
         <p>
-            <a class="main-link" href="https://zaubermalen.de/" target="_blank" rel="dofollow">
-                https://zaubermalen.de/
+            <a class="main-link" href="https://zaubermalen.de" target="_blank" rel="dofollow">
+                https://zaubermalen.de
             </a>
         </p>
 
@@ -163,40 +194,43 @@
         
         <div class="social-list">
             <a href="https://www.facebook.com/zaubermalen/" target="_blank" rel="noopener" class="social-item">
-                <span class="social-name">Facebook</span>
-                <span class="social-url">facebook.com/zaubermalen/</span>
+                <span class="social-name">Facebook:</span>
+                <span class="social-url">https://www.facebook.com/zaubermalen/</span>
             </a>
             
             <a href="https://de.pinterest.com/zaubermalen/" target="_blank" rel="noopener" class="social-item">
-                <span class="social-name">Pinterest</span>
-                <span class="social-url">de.pinterest.com/zaubermalen/</span>
+                <span class="social-name">Pinterest:</span>
+                <span class="social-url">https://de.pinterest.com/zaubermalen/</span>
             </a>
             
             <a href="https://x.com/malenzauber" target="_blank" rel="noopener" class="social-item">
-                <span class="social-name">X (Twitter)</span>
-                <span class="social-url">x.com/malenzauber</span>
+                <span class="social-name">X (Twitter):</span>
+                <span class="social-url">https://x.com/malenzauber</span>
             </a>
             
             <a href="https://www.instagram.com/zaubermalen1/" target="_blank" rel="noopener" class="social-item">
-                <span class="social-name">Instagram</span>
-                <span class="social-url">instagram.com/zaubermalen1/</span>
+                <span class="social-name">Instagram:</span>
+                <span class="social-url">https://www.instagram.com/zaubermalen1/</span>
             </a>
             
             <a href="https://www.linkedin.com/in/zaubermalen/" target="_blank" rel="noopener" class="social-item">
-                <span class="social-name">LinkedIn</span>
-                <span class="social-url">linkedin.com/in/zaubermalen/</span>
+                <span class="social-name">LinkedIn:</span>
+                <span class="social-url">https://www.linkedin.com/in/zaubermalen/</span>
             </a>
             
             <a href="https://www.youtube.com/@zaubermalen" target="_blank" rel="noopener" class="social-item">
-                <span class="social-name">YouTube</span>
-                <span class="social-url">youtube.com/@zaubermalen</span>
+                <span class="social-name">YouTube:</span>
+                <span class="social-url">https://www.youtube.com/@zaubermalen</span>
             </a>
             
             <a href="https://github.com/zaubermalen" target="_blank" rel="noopener" class="social-item">
-                <span class="social-name">GitHub</span>
-                <span class="social-url">github.com/zaubermalen</span>
+                <span class="social-name">GitHub:</span>
+                <span class="social-url">https://github.com/zaubermalen</span>
             </a>
         </div>
+
+        <!-- Ảnh Banner dưới cùng của trang -->
+        <img src="banner.png" alt="Zaubermalen Banner" class="banner-img">
     </div>
 
 </div>
