@@ -1,0 +1,205 @@
+html<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Zaubermalen</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --text-color: #1f2937;
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+            --border-color: #e5e7eb;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 750px;
+            margin: 40px auto;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            margin-bottom: 25px;
+            border: 1px solid var(--border-color);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+            margin: 0 0 25px 0;
+            color: #111827;
+            letter-spacing: -0.025em;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 12px;
+            color: #374151;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        p {
+            margin: 0 0 16px 0;
+            color: #4b5563;
+        }
+
+        .main-link {
+            display: inline-block;
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+            word-break: break-all;
+            transition: color 0.2s ease;
+        }
+
+        .main-link:hover {
+            color: #1d4ed8;
+            text-decoration: underline;
+        }
+
+        .address-text {
+            font-size: 16px;
+            background: #f9fafb;
+            padding: 12px 16px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+            margin: 0;
+        }
+
+        .social-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .social-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 16px;
+            background: #f9fafb;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .social-item:hover {
+            background: #eff6ff;
+            border-color: #bfdbfe;
+            transform: translateY(-1px);
+        }
+
+        .social-name {
+            font-weight: 600;
+            color: #374151;
+        }
+
+        .social-url {
+            color: var(--primary-color);
+            font-size: 14px;
+            word-break: break-all;
+            max-width: 70%;
+            text-align: right;
+        }
+
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            .container { margin: 20px auto; }
+            .card { padding: 20px; }
+            .social-item { flex-direction: column; align-items: flex-start; gap: 4px; }
+            .social-url { max-width: 100%; text-align: left; font-size: 13px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Khối thông tin chính -->
+    <div class="card">
+        <div class="text-center">
+            <h1>ABOUT US</h1>
+        </div>
+
+        <h2>🌐 Official Website:</h2>
+        <p>
+            <a class="main-link" href="https://zaubermalen.de/" target="_blank" rel="dofollow">
+                https://zaubermalen.de/
+            </a>
+        </p>
+
+        <h2 style="margin-top: 25px;">📍 Address:</h2>
+        <p class="address-text">Alexanderstraße 3, 10178 Berlin, Germany</p>
+    </div>
+
+    <!-- Khối mạng xã hội -->
+    <div class="card">
+        <h2>🔗 Other Social Networking Sites:</h2>
+        
+        <div class="social-list">
+            <a href="https://www.facebook.com/zaubermalen/" target="_blank" rel="noopener" class="social-item">
+                <span class="social-name">Facebook</span>
+                <span class="social-url">facebook.com/zaubermalen/</span>
+            </a>
+            
+            <a href="https://de.pinterest.com/zaubermalen/" target="_blank" rel="noopener" class="social-item">
+                <span class="social-name">Pinterest</span>
+                <span class="social-url">de.pinterest.com/zaubermalen/</span>
+            </a>
+            
+            <a href="https://x.com/malenzauber" target="_blank" rel="noopener" class="social-item">
+                <span class="social-name">X (Twitter)</span>
+                <span class="social-url">x.com/malenzauber</span>
+            </a>
+            
+            <a href="https://www.instagram.com/zaubermalen1/" target="_blank" rel="noopener" class="social-item">
+                <span class="social-name">Instagram</span>
+                <span class="social-url">instagram.com/zaubermalen1/</span>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/zaubermalen/" target="_blank" rel="noopener" class="social-item">
+                <span class="social-name">LinkedIn</span>
+                <span class="social-url">linkedin.com/in/zaubermalen/</span>
+            </a>
+            
+            <a href="https://www.youtube.com/@zaubermalen" target="_blank" rel="noopener" class="social-item">
+                <span class="social-name">YouTube</span>
+                <span class="social-url">youtube.com/@zaubermalen</span>
+            </a>
+            
+            <a href="https://github.com/zaubermalen" target="_blank" rel="noopener" class="social-item">
+                <span class="social-name">GitHub</span>
+                <span class="social-url">github.com/zaubermalen</span>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
